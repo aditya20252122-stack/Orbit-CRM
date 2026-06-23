@@ -1,0 +1,164 @@
+/* ContactsPage.css */
+
+.contacts-page-container {
+  width: 100%;
+  animation: fadeIn 0.4s ease-out;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.contacts-header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.contacts-main-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+  margin-bottom: 4px;
+}
+
+.contacts-subtitle {
+  color: #64748b;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* UTILITIES BAR */
+.contacts-utilities-bar {
+  display: flex;
+  padding: 16px 20px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 24px;
+}
+
+/* LOADING WRAPPER */
+.contacts-loading-wrapper {
+  text-align: center;
+  padding: 80px 0;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+}
+
+.contacts-progress-spinner {
+  border: 3px solid #f1f5f9;
+  border-top: 3px solid #4f46e5;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  margin: 0 auto 16px auto;
+  animation: spin 1s linear infinite;
+}
+
+/* DATAGRID / TABLE */
+.contacts-datagrid-box {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.01);
+}
+
+.contacts-datagrid-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.contacts-datagrid-table th {
+  background: #f8fafc;
+  padding: 16px 20px;
+  color: #475569;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.contacts-datagrid-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 0.88rem;
+  color: #334155;
+  vertical-align: middle;
+}
+
+.contact-email-text {
+  font-weight: 500;
+  color: #334155;
+}
+
+.contact-phone-text {
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* CATEGORY BADGES */
+.contact-type-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border-radius: 6px;
+  text-transform: uppercase;
+  margin-top: 4px;
+  width: fit-content;
+}
+
+.contact-type-badge.buyer {
+  background-color: #eff6ff;
+  color: #3b82f6;
+  border: 1px solid #bfdbfe;
+}
+
+.contact-type-badge.seller {
+  background-color: #ecfdf5;
+  color: #059669;
+  border: 1px solid #a7f3d0;
+}
+
+.contact-type-badge.client {
+  background-color: #f8fafc;
+  color: #64748b;
+  border: 1px solid #cbd5e1;
+}
+
+.client-name-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-history-preview {
+  color: #64748b;
+  font-style: italic;
+  font-size: 0.85rem;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* EMPTY STATE */
+.contacts-empty {
+  text-align: center;
+  padding: 80px 40px;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+}
+
+@media (max-width: 768px) {
+  .contacts-header-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
